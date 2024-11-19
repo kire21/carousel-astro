@@ -1,5 +1,5 @@
 ---
-
+import Slider from "../components/Slider.astro";
 ---
 
 <html lang="en">
@@ -11,6 +11,20 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main>
+			<Slider />
+		</main>
 	</body>
 </html>
+
+<style>
+body{
+    /* margin: 0; */
+    background-color: #e5e5e5;
+	margin-top: 100px;
+}
+main{
+    width: min(1300px, 95vw);
+    margin: auto;
+}
+</style>
